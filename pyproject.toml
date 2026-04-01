@@ -4,7 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "DotfileSync"
-dynamic = ["version"]
+version="0.0.1" 
+ 
 description = 'A TUI that manages your dotfiles (.bashrc, .vimrc, etc.) — lets you snapshot current config, switch between named profiles (e.g., "work", "home", "minimal"), and diff profiles side by side.'
 readme = "README.md"    
  
