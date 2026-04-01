@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools >=45","wheel","setuptools_scm >=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "DotfileSync"
+dynamic = ["version"]
+description = 'A TUI that manages your dotfiles (.bashrc, .vimrc, etc.) — lets you snapshot current config, switch between named profiles (e.g., "work", "home", "minimal"), and diff profiles side by side.'
+readme = "README.md"    
+ 
+# with open("README.md", encoding="utf-8") as f:
+#     long_description = f.read()
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name= "MadushanakaRajapaksha", email="MadushankaRajapaksha999@gmail.com"}
+
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "textual>=0.1.0", # core TUI framework
+    "rich>=10.0.0", #cli formatings
+    
+]
+
+[project.urls]
+Homepage = "https://github.com/MadushankaRajapaksha/DotfileSync"
+Repository = "https://github.com/MadushankaRajapaksha/DotfileSync"
+Documentation = "https://github.com/MadushankaRajapaksha/DotfileSync#readme"
+Changelog = "https://github.com/MadushankaRajapaksha/DotfileSync/releases"
+
+
+# [tool.setuptools_scm]
+# version_scheme = "post-release"
+# local_scheme = "dirty-tag"
+
+[project.scripts]
+dotSync = "dotfilesync.cli:main"
