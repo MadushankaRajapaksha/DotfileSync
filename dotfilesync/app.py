@@ -747,8 +747,8 @@ class AddFileBrowser(ModalScreen):
 
             for item in items:
                 # Skip hidden files/folders only if show_hidden is disabled
-                if not self.show_hidden and item.name.startswith("."):
-                    continue
+                # if not self.show_hidden and item.name.startswith("."):
+                #     continue
 
                 try:
                     if item.is_dir():
