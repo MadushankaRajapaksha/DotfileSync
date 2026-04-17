@@ -2,7 +2,7 @@
 
 #### *stop manually copying your configs. Switch environments in a heartbeat* 
 
-`DotfileSync` is a lightweight, Python-powerd TUI that manages your configuration files using *Symbolic Links*. Whether your moving from your office desk to switching from "Work Mode" to "Gaming Mode", this tool swaps your `.gitconfig`, and `.vimrc` instantly.
+`DotfileSync` is a lightweight, Python-powerd TUI that manages your configuration files using *Symbolic Links*. Whether your moving from your office desk to switching from "Work Mode" to "Gaming Mode", this tool swaps your `.gitconfig`,`.vimrc` like all config or any file instantly.
 
 # ✨Why use this?
 
@@ -23,7 +23,7 @@ pip install DotfileSync-cli
 
  
 
-## 📖 Simple App Guide
+## 📖 Simple App Guide (TUI)
 ### 1. Launch the App
 Open your terminal and type:
 ```
@@ -37,20 +37,22 @@ You’ll see a clean dashboard with your Profiles and Files.
 - This creates a safe folder to store those specific settings.
 
 ### 3. Add Your Files
-- Choose the file you want to manage (e.g., .bashrc).
+- Choose the file you want to manage (e.g., .bashrc, .).
 - The app takes a copy and keeps it safe inside your profiles.
  
 ### 4. Activate & Link (The Magic)
 - Select your profile (e.g., Work).
-- Click "Link Profile".
-- What happens? Your computer is now "pointing" to the settings inside that specific profile.
+- Click "Activate Profile".
+- Then Click "Link Profile"
+
 
 ### 5. Revert to Normal
 If you want to stop using the app and go back to exactly how things were:
 - Click "Unlink Profile".
-- We remove the links and put your original files back where they belong.
+- Now you can chage profile and re-link
+ 
 
 ## 🛡️ A Note for Windows Users
-If you're on Windows, make sure you have Developer Mode enabled in your settings. This allows Python to create symbolic links without needing to run as Administrator every single time.
+If you're on Windows, make sure you have Developer Mode enabled in your settings. This allows Python to create symbolic links without needing to run as Administrator every single time. Do not delete or uninstall app when linked Profile(That can miss u file)
 # 🤝 Contributing
 Contributions are welcome! If you find a bug or want a new feature, open an issue or submit a PR.
